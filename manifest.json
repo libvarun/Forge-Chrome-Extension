@@ -1,0 +1,16 @@
+{
+    "name": "Forge",
+    "manifest_version": 3,
+    "version": "1",
+    "action": {
+        "default_popup": "forge.html",
+        "default_icon": "forge_icon.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["*://*.oss-manager.autodesk.io/*"],
+        "js": ["main.js"]
+      }
+    ]
+    
+   }
